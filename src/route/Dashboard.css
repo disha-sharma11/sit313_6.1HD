@@ -1,0 +1,62 @@
+.dashboard-container {
+  width: 70%;
+  margin: 2rem auto;
+  background: var(--bg-gradient);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px var(--shadow);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.edit-btn {
+  background: var(--button-bg);
+  border: none;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.edit-btn:hover {
+  background: var(--button-hover);
+}
+
+.dashboard-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.dashboard-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--text-color);
+  object-fit: cover;
+  transition: border-color 0.3s ease;
+}
+
+.dashboard-details p {
+  margin: 0.5rem 0;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+/* Dark mode styles */
+.dark .dashboard-container {
+  background: var(--bg-gradient);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.dark .dashboard-photo {
+  border: 3px solid var(--text-color);
+}

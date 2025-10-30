@@ -1,0 +1,49 @@
+:root {
+  --bg-gradient: linear-gradient(to right, #e3f2fd, #ffffff);
+  --text-color: #007bff;
+  --bg-color: #ffffff;
+  --input-bg: #f0f4ff;
+  --input-border: #007bff;
+  --button-bg: linear-gradient(to right, #007bff, #0056b3);
+  --button-hover: linear-gradient(to right, #0056b3, #004085);
+  --shadow: rgba(0, 123, 255, 0.3);
+  --shadow-hover: rgba(0, 123, 255, 0.4);
+}
+
+.dark {
+  --bg-gradient: linear-gradient(to right, #1a1a1a, #2d2d2d);
+  --text-color: #ffffff;
+  --bg-color: #2d2d2d;
+  --input-bg: #3d3d3d;
+  --input-border: #ffffff;
+  --button-bg: linear-gradient(to right, #555555, #777777);
+  --button-hover: linear-gradient(to right, #777777, #999999);
+  --shadow: rgba(255, 255, 255, 0.1);
+  --shadow-hover: rgba(255, 255, 255, 0.2);
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+  background: var(--bg-gradient);
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dark body {
+  background: var(--bg-gradient);
+  color: var(--text-color);
+}
+
+.uniform-section {
+  background: var(--bg-gradient);
+  padding: 20px 0;
+  transition: background 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .uniform-section {
+    padding: 10px 0;
+  }
+}

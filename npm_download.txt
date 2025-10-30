@@ -1,0 +1,8 @@
+npm install dotenv express @sendgrid/mail react-router-dom firebase bcryptjs @uiw/react-codemirror @codemirror/lang-javascript react-markdown cors stripe framer-motion
+yjs y-webrtc y-protocols codemirror @codemirror/view y-codemirror.next
+
+
+
+run this for backend:
+node --env-file .env plans.js
+node server.js

@@ -1,0 +1,14 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background: var(--bg-gradient);
+  transition: background 0.3s ease;
+}
+
+/* Dark mode styles */
+.dark .card-container {
+  background: var(--bg-gradient);
+}

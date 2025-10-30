@@ -1,0 +1,28 @@
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  color: var(--text-color);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  z-index: 1000;
+  transition: color 0.3s ease;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+  color: var(--text-color);
+}
+
+/* Dark mode styles */
+.dark .back-button {
+  color: var(--text-color);
+}
+
+.dark .back-button:hover {
+  color: var(--text-color);
+}

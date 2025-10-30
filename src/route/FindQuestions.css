@@ -1,0 +1,11 @@
+.find-questions {
+  padding: 20px;
+  align-items: center;
+  background: var(--bg-gradient);
+  transition: background 0.3s ease;
+}
+
+/* Dark mode styles */
+.dark .find-questions {
+  background: var(--bg-gradient);
+}

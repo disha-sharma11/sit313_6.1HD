@@ -1,0 +1,132 @@
+.plans-page {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", Arial, sans-serif;
+  transition: color 0.3s ease;
+}
+
+.page-description {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: 40px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: color 0.3s ease;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.Card {
+  background: var(--bg-gradient);
+  border-radius: 16px;
+  padding: 25px;
+  width: 320px;
+  box-shadow: 0 8px 20px var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  border: 1px solid var(--input-border);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+.Card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.Card h2 {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-bottom: 15px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.Card p {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.Card .Button {
+  display: block;
+  margin: 20px auto 0;
+  width: 80%;
+  max-width: 250px;
+}
+
+.Card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.Card li {
+  font-size: 0.95rem;
+  color: var(--text-color);
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+  text-align: left;
+  transition: color 0.3s ease;
+}
+
+.Card li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: var(--text-color);
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.Card.premium {
+  background: var(--bg-gradient);
+  border: 2px solid var(--text-color);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.Card.premium h2 {
+  color: var(--text-color);
+}
+
+.Card.premium li::before {
+  background: var(--text-color);
+}
+
+/* Dark mode styles */
+.dark .Card {
+  background: var(--bg-gradient);
+  border: 1px solid var(--input-border);
+  box-shadow: 0 8px 20px var(--shadow);
+}
+
+.dark .Card:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.dark .Card.premium {
+  background: var(--bg-gradient);
+  border: 2px solid var(--text-color);
+}

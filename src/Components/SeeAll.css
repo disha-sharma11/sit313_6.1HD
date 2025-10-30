@@ -1,0 +1,29 @@
+.see-all {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.see-all p {
+  display: inline-block;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  font-weight: 500;
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.see-all p:hover {
+  color: #fff;
+  background: var(--button-bg);
+  border-bottom: 2px solid var(--text-color);
+}
+
+/* Dark mode styles */
+.dark .see-all p:hover {
+  color: #fff;
+  background: var(--button-bg);
+  border-bottom: 2px solid var(--text-color);
+}

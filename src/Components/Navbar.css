@@ -1,0 +1,91 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 10px 15px;
+  background: var(--bg-gradient);
+  color: var(--text-color);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  border-bottom: 2px solid var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.search-input {
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  padding: 6px 12px;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  margin: 5px 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  flex: 1;
+  min-width: 120px;
+  transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: var(--text-color);
+  box-shadow: 0 0 6px var(--shadow);
+}
+
+.button {
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  background: var(--button-bg);
+  color: white;
+  cursor: pointer;
+  margin-left: 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", Arial, sans-serif;
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  box-shadow: 0 2px 4px var(--shadow);
+  transition: background 0.3s ease;
+  flex-shrink: 0;
+}
+
+.button:hover {
+  background: var(--button-hover);
+  box-shadow: 0 4px 8px var(--shadow-hover);
+}
+
+@media (max-width: 768px) {
+  .search-input {
+    margin: 5px;
+    min-width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 6px 10px;
+  }
+  .search-input {
+    padding: 4px 8px;
+    min-width: 60px; 
+  }
+  .button {
+    padding: 4px 8px;
+  }
+}
+
+.toggle-btn {
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  background: var(--button-bg);
+  color: white;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 4px var(--shadow);
+  transition: background 0.3s ease;
+  flex-shrink: 0;
+}
+
+.toggle-btn:hover {
+  background: var(--button-hover);
+  box-shadow: 0 4px 8px var(--shadow-hover);
+}

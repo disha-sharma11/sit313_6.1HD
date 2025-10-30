@@ -1,0 +1,39 @@
+.Button {
+  width: 60%;
+  max-width: 300px;
+  padding: clamp(8px, 1.5vw, 12px);
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: var(--button-bg);
+  color: #fff;
+  font-weight: 500;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  cursor: pointer;
+  transition: background 0.2s ease;
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+.Button:hover {
+  background: var(--button-hover);
+  box-shadow: 0 4px 8px var(--shadow-hover);
+}
+
+@media (max-width: 480px) {
+  .Button {
+    width: 100%;
+    padding: 8px;
+  }
+}
+
+/* Dark mode styles */
+.dark .Button {
+  background: var(--button-bg);
+  color: #fff;
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+.dark .Button:hover {
+  background: var(--button-hover);
+  box-shadow: 0 4px 8px var(--shadow-hover);
+}

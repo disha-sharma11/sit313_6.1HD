@@ -1,0 +1,72 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  /* Removed background to unify with uniform-section */
+  margin-bottom: 20px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg-gradient);
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px var(--shadow);
+  width: 100%;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-title,
+.signup-input,
+.signup-button {
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.signup-title {
+  font-weight: bold;
+  margin: 0;
+  white-space: nowrap;
+  color: var(--text-color);
+}
+
+.signup-input {
+  padding: 10px;
+  border: 2px solid var(--input-border);
+  border-radius: 8px;
+  flex: 1; /* stretch input */
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.signup-input:focus {
+  border-color: var(--text-color);
+  box-shadow: 0 0 8px var(--shadow);
+}
+
+.signup-button {
+  padding: 10px 16px;
+  background: var(--button-bg);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 6px var(--shadow);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-button:hover {
+  background: var(--button-hover);
+  box-shadow: 0 4px 12px var(--shadow-hover);
+}
+
+/* Dark mode styles */
+.dark .signup-form {
+  background: var(--bg-gradient);
+  box-shadow: 0 4px 12px var(--shadow);
+}
